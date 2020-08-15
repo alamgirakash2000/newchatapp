@@ -23,6 +23,9 @@ function App() {
         break;
     }
   }
+  window.addEventListener("click", () => {
+    document.getElementById("router").className = "d-none";
+  });
   return (
     <div>
       <ToastContainer
@@ -30,6 +33,9 @@ function App() {
         hideProgressBar={true}
         position={toast.POSITION.TOP_CENTER}
       />
+      <div id="router">
+        <Home />
+      </div>
       <Switch>
         <Route exact path="/" render={(props) => <Home {...props} />} />
         <Route
@@ -48,7 +54,10 @@ function App() {
           path="/profile"
           render={(props) => <Profile showToast={showToast} {...props} />}
         />
-        <Route path="/chatbox" render={(props) => <ChatboxPage {...props} />} />
+        <Route
+          path="/chatbox"
+          component={(props) => <ChatboxPage {...props} />}
+        />
       </Switch>
     </div>
   );
