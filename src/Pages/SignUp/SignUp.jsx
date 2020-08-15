@@ -1,5 +1,5 @@
 import "./SignUp.style.css";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import firebase from "../../firebase/Config";
 import { TextField } from "@material-ui/core";
 import { Link } from "react-router-dom";
@@ -9,13 +9,11 @@ export default function SignUp(props) {
   const [email, setEmail] = useState(null);
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState(null);
 
   const nullify = () => {
     setEmail(null);
     setName("");
     setPassword("");
-    setError(null);
   };
 
   const handleSubmit = async (e) => {

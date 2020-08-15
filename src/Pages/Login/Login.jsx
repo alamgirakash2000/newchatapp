@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { TextField, Input } from "@material-ui/core";
+import { TextField } from "@material-ui/core";
 import LoginString from "../Login/LoginString";
 import "./Login.style.css";
 import firebase from "../../firebase/Config";
 import { Link } from "react-router-dom";
 
 export default function Login(props) {
-  const [isLoading, setIsLoading] = useState(true);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -54,10 +53,7 @@ export default function Login(props) {
   // It will directly redirect him/her to the chat page
   useEffect(() => {
     if (localStorage.getItem(LoginString.ID)) {
-      setIsLoading(false);
       props.history.push("./chat");
-    } else {
-      setIsLoading(false);
     }
   }, []);
 

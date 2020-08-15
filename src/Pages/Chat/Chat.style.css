@@ -1,0 +1,52 @@
+.users {
+  background: rgb(49, 88, 160);
+  color: black;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgb(81, 255, 0);
+  margin: 0 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 50px;
+}
+
+.users img {
+  max-width: 60px;
+  max-height: 60px;
+  border-radius: 50%;
+}
+.usersList {
+  min-height: 100vh;
+}
+.textItem {
+  margin-left: 10px;
+}
+.users:focus {
+  background-color: rgb(4, 102, 89);
+  color: white;
+  outline: none;
+  box-shadow: 1px 1px 5px rgb(248, 18, 75);
+}
+.user:hover {
+  background-color: rgba(4, 102, 89, 0.658);
+}
+
+.chatlist-header {
+  background: rgb(72, 16, 124);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.ProfilePicture {
+  max-width: 50px;
+  border-radius: 50%;
+}
+.search-input {
+  width: 90%;
+  padding: 3px 5px;
+  border-radius: 5px;
+  border: none;
+}
+.search-input:focus {
+  outline: none;
+}

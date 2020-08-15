@@ -51,7 +51,6 @@ function Home() {
             <ul className="contactMe">
               <li>
                 <a
-                  target="_blank"
                   href="mailto:alamgirakash2000@gmail.com"
                   className="text-primary"
                 >
@@ -60,7 +59,6 @@ function Home() {
               </li>
               <li>
                 <a
-                  target="_blank"
                   href="https://www.facebook.com/alamgir.akash.522"
                   className="text-primary"
                 >
@@ -69,7 +67,6 @@ function Home() {
               </li>
               <li>
                 <a
-                  target="_blank"
                   href="https://www.linkedin.com/in/md-alamgir-hossain-3765a71b1/"
                   className="text-info"
                 >
@@ -78,7 +75,6 @@ function Home() {
               </li>
               <li>
                 <a
-                  target="_blank"
                   href="https://github.com/alamgirakash2000"
                   className="text-white"
                 >

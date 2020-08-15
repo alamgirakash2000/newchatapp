@@ -1,0 +1,29 @@
+.msg {
+  margin: auto 0;
+  margin: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  max-width: 70%;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px gray;
+}
+
+.message__image {
+  max-height: 300px;
+  width: 100%;
+}
+
+.mine {
+  margin-left: auto;
+  background: rgb(15, 105, 165);
+  color: white;
+}
+.mine img {
+  position: relative;
+  right: 0;
+}
+
+.others {
+  background-color: rgb(227, 235, 241);
+  color: black;
+  margin-right: auto;
+}

@@ -1,0 +1,10 @@
+.welcome__image {
+  margin-top: 100px;
+  width: 30%;
+}
+.welcome {
+  background-image: url("https://i.pinimg.com/474x/2e/2e/25/2e2e25c53d858f4af66151304fdb68b7.jpg");
+  height: 100vh;
+  margin: 0;
+  object-fit: contain;
+}

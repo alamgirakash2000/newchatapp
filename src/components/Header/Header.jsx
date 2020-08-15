@@ -19,12 +19,10 @@ function Header() {
             <Link to="/" className="ml-md-3">
               Home
             </Link>
-            <a class="selected">
-              <Link tp="/">About App</Link>
-            </a>
-            <a>
-              <Link to="/">Contact Me</Link>
-            </a>
+
+            <Link tp="/">About App</Link>
+
+            <Link to="/">Contact Me</Link>
           </nav>
         </div>
       </div>

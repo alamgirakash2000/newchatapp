@@ -1,11 +1,15 @@
 import React from "react";
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import { withRouter } from "react-router";
+import { Route, Switch } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "./App.css";
 
 import Home from "./Pages/Home/Home";
 import Login from "./Pages/Login/Login";
 import SignUp from "./Pages/SignUp/SignUp";
+import Chat from "./Pages/Chat/Chat";
+import Profile from "./Pages/Profile/Profile";
+import ChatboxPage from "./Pages/ChatboxPage/ChatboxPage";
 
 function App() {
   function showToast(type, message) {
@@ -21,7 +25,7 @@ function App() {
     }
   }
   return (
-    <Router>
+    <div>
       <ToastContainer
         autoClose={2000}
         hideProgressBar={true}
@@ -37,9 +41,18 @@ function App() {
           path="/signup"
           render={(props) => <SignUp showToast={showToast} {...props} />}
         />
+        <Route
+          path="/chat"
+          render={(props) => <Chat showToast={showToast} {...props} />}
+        />
+        <Route
+          path="/profile"
+          render={(props) => <Profile showToast={showToast} {...props} />}
+        />
+        <Route path="/chatbox" render={(props) => <ChatboxPage {...props} />} />
       </Switch>
-    </Router>
+    </div>
   );
 }
 
-export default App;
+export default withRouter(App);
