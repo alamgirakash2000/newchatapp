@@ -1,0 +1,55 @@
+[debug] [2020-08-15T11:28:45.060Z] ----------------------------------------------------------------------
+[debug] [2020-08-15T11:28:45.062Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-08-15T11:28:45.062Z] CLI Version:   8.7.0
+[debug] [2020-08-15T11:28:45.062Z] Platform:      win32
+[debug] [2020-08-15T11:28:45.063Z] Node Version:  v12.18.0
+[debug] [2020-08-15T11:28:45.064Z] Time:          Sat Aug 15 2020 17:28:45 GMT+0600 (Bangladesh Standard Time)
+[debug] [2020-08-15T11:28:45.064Z] ----------------------------------------------------------------------
+[debug] [2020-08-15T11:28:45.064Z] 
+[debug] [2020-08-15T11:28:45.072Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-08-15T11:28:45.072Z] > authorizing via signed-in user
+[debug] [2020-08-15T11:28:45.072Z] [iam] checking project chatapp-by-akash for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-08-15T11:28:45.075Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/chatapp-by-akash:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-08-15T11:28:47.538Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 15 Aug 2020 11:28:47 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1135","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-08-15T11:28:47.540Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/chatapp-by-akash  
+ 
+[debug] [2020-08-15T11:28:58.512Z] Server Error. socket hang up
+[debug] [2020-08-15T11:28:58.796Z] FirebaseError: Server Error. socket hang up
+    at Request._callback (C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:32:31)
+    at self.callback (C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:315:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at Request.onRequestError (C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (events.js:327:22)
+    at ClientRequest.EventEmitter.emit (domain.js:482:12)
+    at TLSSocket.socketOnEnd (_http_client.js:453:9)
+    at TLSSocket.emit (events.js:327:22)
+    at TLSSocket.EventEmitter.emit (domain.js:482:12)
+    at endReadableNT (_stream_readable.js:1221:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Failed to get Firebase project chatapp-by-akash. Please make sure the project exists and your account has permission to access it.
+[debug] [2020-08-15T11:31:08.979Z] ----------------------------------------------------------------------
+[debug] [2020-08-15T11:31:08.981Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-08-15T11:31:08.981Z] CLI Version:   8.7.0
+[debug] [2020-08-15T11:31:08.981Z] Platform:      win32
+[debug] [2020-08-15T11:31:08.981Z] Node Version:  v12.18.0
+[debug] [2020-08-15T11:31:08.982Z] Time:          Sat Aug 15 2020 17:31:08 GMT+0600 (Bangladesh Standard Time)
+[debug] [2020-08-15T11:31:08.982Z] ----------------------------------------------------------------------
+[debug] [2020-08-15T11:31:08.982Z] 
+[debug] [2020-08-15T11:31:08.990Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-08-15T11:31:08.990Z] > authorizing via signed-in user
+[debug] [2020-08-15T11:31:08.990Z] [iam] checking project chatapp-by-akash for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-08-15T11:31:08.993Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/chatapp-by-akash:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-08-15T11:31:10.447Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 15 Aug 2020 11:31:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1134","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-08-15T11:31:10.450Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/chatapp-by-akash  
+ 
+[debug] [2020-08-15T11:31:11.794Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 15 Aug 2020 11:31:11 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'chatapp-by-akash'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-08-15T11:31:11.809Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/chatapp-by-akash/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}

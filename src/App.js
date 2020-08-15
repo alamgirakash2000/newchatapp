@@ -1,5 +1,4 @@
 import React from "react";
-import { withRouter } from "react-router";
 import { Route, Switch } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "./App.css";
@@ -55,4 +54,4 @@ function App() {
   );
 }
 
-export default withRouter(App);
+export default App;
