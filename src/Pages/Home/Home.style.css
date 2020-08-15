@@ -1,0 +1,13 @@
+.about-me {
+  background: black;
+  color: white;
+  padding: 10px 0;
+}
+.contactMe {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.contactMe li {
+  margin: 20px 10px;
+}
