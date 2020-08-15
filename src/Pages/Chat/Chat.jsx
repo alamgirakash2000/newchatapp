@@ -7,6 +7,9 @@ import Chatbox from "../ChatBox/ChatBox";
 import Welcome from "../Welcome/Welcome";
 
 function Chat(props) {
+  if (!localStorage.getItem(LoginString.Name)) {
+    props.history.push("/");
+  }
   const currentUser = localStorage.getItem(LoginString.Name);
   const currentUserId = localStorage.getItem(LoginString.ID);
   const currentUserPhoto = localStorage.getItem(LoginString.PhotoURL);
