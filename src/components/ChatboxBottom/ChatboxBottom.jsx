@@ -59,7 +59,7 @@ function ChatboxBottom(props) {
                 .firestore()
                 .collection("messages")
                 .add({
-                  ids: currentUserId + " " + props.currentPairUser.id,
+                  ids: [currentUserId, props.currentPairUser.id],
                   text: inputValue.trim(),
                   url: url,
                   timestamp: Firebase.firestore.FieldValue.serverTimestamp(),
@@ -79,7 +79,7 @@ function ChatboxBottom(props) {
         .firestore()
         .collection("messages")
         .add({
-          ids: currentUserId + " " + props.currentPairUser.id,
+          ids: [currentUserId, props.currentPairUser.id],
           text: inputValue.trim(),
           url: null,
           timestamp: Firebase.firestore.FieldValue.serverTimestamp(),

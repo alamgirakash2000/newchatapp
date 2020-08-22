@@ -27,64 +27,6 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="about-me">
-        <div className="container about-me">
-          <h3 className="text-center">About Me</h3>
-          <div className="col-md-7 d-flex">
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/chatapp-by-akash.appspot.com/o/obnB3iqHV7hETOUOC4YArbHyb222?alt=media&token=8b3f34f3-eda2-41f7-9538-2918ab003a57"
-              className="w-25 mr-2"
-              alt=""
-            />
-            I am Md. Alamgir Hossain (Akash).Currently I am a student of
-            Bangladesh University of Engineering and Technology (BUET) in the
-            department of Electrical and Electronic Engineering. I am so
-            interested in Web development and so passionate about this. My
-            hometown is Bogura, Bangladesh. Currently living in Dhaka,
-            Bangladesh.
-          </div>
-          <div className="col-md-5">
-            <form></form>
-          </div>
-          <div>
-            <h3 className="text-center">Get in touch</h3>
-            <ul className="contactMe">
-              <li>
-                <a
-                  href="mailto:alamgirakash2000@gmail.com"
-                  className="text-primary"
-                >
-                  <i class="fas fa-at fa-2x"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebook.com/alamgir.akash.522"
-                  className="text-primary"
-                >
-                  <i class="fab fa-facebook fa-2x"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/md-alamgir-hossain-3765a71b1/"
-                  className="text-info"
-                >
-                  <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/alamgirakash2000"
-                  className="text-white"
-                >
-                  <i class="fab fa-github fa-2x"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
       <Footer />
     </div>
   );

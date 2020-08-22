@@ -141,7 +141,7 @@ function Profile(props) {
           id="standard-basic"
           className="form-control mb-3"
           type="text"
-          value={aboutMe}
+          value={description}
           onChange={(e) => setDescription(e.target.value)}
           label="About Me"
         />

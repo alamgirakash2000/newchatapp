@@ -1,6 +1,7 @@
 import React from "react";
 import "./Messages.style.css";
 import LoginString from "../../Pages/Login/LoginString";
+import Modal from "@material-ui/core/Modal";
 
 function Messages({ msg }) {
   let className;
@@ -23,6 +24,7 @@ function Messages({ msg }) {
   };
 
   let date = getDate(msg.timestamp || 0);
+
   return (
     <div onClick={showDate} className={`msg ${className}`}>
       {msg.text ? <p className="my-0">{msg.text}</p> : null}
