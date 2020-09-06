@@ -9,3 +9,18 @@ button:focus {
   border: none;
   color: green;
 }
+
+.image {
+  width: 70px;
+}
+.image img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.image button {
+  color: #fff;
+  background: #ff0000;
+  height: 50%;
+  padding: 4px;
+}

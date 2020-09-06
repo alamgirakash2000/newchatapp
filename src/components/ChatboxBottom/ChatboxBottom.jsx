@@ -8,6 +8,7 @@ import "./ChatboxBottom.Style.css";
 function ChatboxBottom(props) {
   const [inputValue, setInputValue] = useState("");
   const [newPhoto, setNewPhoto] = useState(null);
+  const [imgUrl, setImgUrl] = useState(null);
 
   let refInput = null;
   const currentUserId = localStorage.getItem(LoginString.ID);
@@ -21,6 +22,7 @@ function ChatboxBottom(props) {
         return;
       }
       setNewPhoto(e.target.files[0]);
+      setImgUrl(URL.createObjectURL(e.target.files[0]));
     } else {
       props.showToast(0, "Something wrong with image");
     }
@@ -95,34 +97,50 @@ function ChatboxBottom(props) {
   };
 
   return (
-    <from id="from">
-      <Image
-        className="icOpenGallery"
-        onClick={() => {
-          refInput.click();
-        }}
-      />
-      <input
-        ref={(el) => {
-          refInput = el;
-        }}
-        className="viewInputGallery"
-        accept="images/"
-        type="file"
-        onChange={onSelectImage}
-      />
-      <input
-        className="viewInput mx-2"
-        value={inputValue}
-        placeholder="Type a message"
-        onChange={(e) => {
-          setInputValue(e.target.value);
-        }}
-      />
-      <button className="sendButton" type="submit" onClick={onSendMessage}>
-        <Send className="icSend" />
-      </button>
-    </from>
+    <>
+      <div
+        className={`image ${imgUrl ? "d-flex" : "d-none align-items-center"}`}
+      >
+        <img src={imgUrl} alt="" />
+        <button
+          onClick={() => {
+            setImgUrl(null);
+            setNewPhoto(null);
+          }}
+          className=" ml-2"
+        >
+          x
+        </button>
+      </div>
+      <from id="from">
+        <Image
+          className="icOpenGallery"
+          onClick={() => {
+            refInput.click();
+          }}
+        />
+        <input
+          ref={(el) => {
+            refInput = el;
+          }}
+          className="viewInputGallery"
+          accept="images/"
+          type="file"
+          onChange={onSelectImage}
+        />
+        <input
+          className="viewInput mx-2"
+          value={inputValue}
+          placeholder="Type a message"
+          onChange={(e) => {
+            setInputValue(e.target.value);
+          }}
+        />
+        <button className="sendButton" type="submit" onClick={onSendMessage}>
+          <Send className="icSend" />
+        </button>
+      </from>
+    </>
   );
 }
 
